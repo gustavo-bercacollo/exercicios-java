@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 public class dataehora {
 
 	public static void main(String[] args) {
-		LocalDate data = LocalDate.now();
+		LocalDateTime data = LocalDateTime.now();
 		
 		System.out.println(data);
 	}
