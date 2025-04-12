@@ -2,7 +2,7 @@ package dataehora;
 
 import java.time.LocalDateTime;
 
-public class dataehora {
+public class Ex01 {
 
 	public static void main(String[] args) {
 		LocalDateTime data = LocalDateTime.now();
