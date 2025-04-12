@@ -1,0 +1,13 @@
+# Eclipse configs
+.classpath
+.project
+.settings/
+
+# Build
+/bin/
+target/
+*.class
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
