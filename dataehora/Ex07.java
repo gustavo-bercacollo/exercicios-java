@@ -4,7 +4,7 @@ import java.time.Year;
 import java.util.Scanner;
 
 
-public class Program {
+public class Ex07 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

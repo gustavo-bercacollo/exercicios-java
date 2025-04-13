@@ -6,8 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
-
-public class Program {
+public class Ex08 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

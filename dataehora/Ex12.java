@@ -1,28 +1,30 @@
-package dataehora;
-
-import java.time.LocalDate;
+import java.time.Duration;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Program {
 
     public static void main(String[] args) {
-    	Locale localeBR = Locale.forLanguageTag("pt-BR");
-
+        
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a data e hora do evento (dd/MM/yyyy HH:mm): ");
+        String dataHoraStr = scanner.nextLine();
         
-        System.out.print("Digite uma data no formato (dd/MM/yyyy): ");
-        String dataStr = scanner.nextLine();
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
         
-        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate data = LocalDate.parse(dataStr, formato);
+        LocalDateTime dataHoraEvento = LocalDateTime.parse(dataHoraStr, formato);
         
-        DateTimeFormatter formatoDiaSemana = DateTimeFormatter.ofPattern("EEEE", localeBR);
-        String diaSemana = data.format(formatoDiaSemana);
+        LocalDateTime agora = LocalDateTime.now();
         
-        System.out.println("Data: " + data.format(formato) + " será " + diaSemana);
-
+        Duration duracao = Duration.between(agora, dataHoraEvento);
+        
+        long dias = duracao.toDays();
+        long horas = duracao.toHours() % 24;
+        long minutos = duracao.toMinutes() % 60;
+        
+        System.out.println("Faltam " + dias + " dias, " + horas + " horas e " + minutos + " minutos para o evento");
+        
         scanner.close();
     }
 }

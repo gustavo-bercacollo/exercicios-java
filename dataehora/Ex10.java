@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class Program {
+public class Ex10 {
 
     public static void main(String[] args) {
         

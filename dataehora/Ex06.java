@@ -5,7 +5,6 @@ import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-
 public class Ex06 {
 
 	public static void main(String[] args) {

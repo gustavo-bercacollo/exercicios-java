@@ -3,7 +3,6 @@ package dataehora;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-
 public class Ex05 {
 
 	public static void main(String[] args) {

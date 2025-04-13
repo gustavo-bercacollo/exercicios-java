@@ -3,7 +3,7 @@ package dataehora;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class Program {
+public class Ex11 {
 
     public static void main(String[] args) {
         
